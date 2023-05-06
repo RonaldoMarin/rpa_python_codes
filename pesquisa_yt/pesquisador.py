@@ -15,7 +15,7 @@ pyautogui.press('enter', interval=2)
 
 #Bloco fazer pesquisa
 #pyautogui.moveTo(568, 131)
-pyautogui.click(568, 131, interval=0.75)
+pyautogui.click(568, 131, interval=1)
 pyautogui.write('War on Babylon - Izrael Howls (Legendado)')
 pyautogui.press('enter', interval=2)
 
