@@ -1,7 +1,7 @@
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-
+from time import sleep
 #instala a versão mais recente do Chrome Driver Manager
 servico = Service(ChromeDriverManager().install())
 
@@ -26,9 +26,12 @@ navegador.find_element('xpath', '//*[@id="login"]/div[4]/form/div/input[12]').cl
 navegador.find_element('xpath', '/html/body/div[1]/div[6]/div/div/aside/div/loading-context/div/div[1]/div/h2/a').click()
 
 #Nomeação do novo repositório e Create
-navegador.find_element('xpath', '//*[@id="react-aria-2"]').send_keys('RRonaldo')
+navegador.find_element('xpath', '//*[@id="react-aria-2"]').send_keys('aa')
+sleep(5)
 navegador.find_element('xpath', '//*[@id="react-aria-8"]').click()
+sleep(5)
 navegador.find_element('xpath', '/html/body/div[1]/div[6]/main/react-app/div/div/form/div[5]/button').click()
+sleep(5)
 
 
 navegador.find_element('xpath', '//*[@id="repo-content-pjax-container"]/div/div/div[2]/div[1]/div[2]').click()
