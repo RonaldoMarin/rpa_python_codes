@@ -25,20 +25,22 @@ navegador.find_element('xpath', '//*[@id="login"]/div[4]/form/div/input[12]').cl
 
 #Bloco de código Editar perfil: navBar -> click perfil
 navegador.find_element('xpath', '/html/body/div[1]/div[1]/header/div[7]/details/summary').click()
-sleep(3)
+sleep(2)
 navegador.find_element('xpath', '/html/body/div[1]/div[1]/header/div[7]/details/details-menu/a[10]').click()
 
-sleep(3)
-#trocar nome 
-navegador.find_element('xpath', '//*[@id="user_profile_name"]').send_keys('Ronaldo O Marinho')
 sleep(2)
-
+#trocar nome 
+navegador.find_element('xpath', '//*[@id="user_profile_name"]').clear()
+navegador.find_element('xpath', '//*[@id="user_profile_name"]').send_keys(input())
+sleep(2)
 #Mudar bio
-navegador.find_element('xpath', '//*[@id="user_profile_bio"]').send_keys('Eu sou um robo!')
+navegador.find_element('xpath', '//*[@id="user_profile_bio"]').clear()
+navegador.find_element('xpath', '//*[@id="user_profile_bio"]').send_keys(input())
 sleep(2)
 
 #mudar localização
-navegador.find_element('xpath', '//*[@id="user_profile_location"]').send_keys('Robolandia')
+navegador.find_element('xpath', '//*[@id="user_profile_location"]').clear()
+navegador.find_element('xpath', '//*[@id="user_profile_location"]').send_keys(input())
 sleep(2)
 
 #set horário
@@ -47,5 +49,5 @@ sleep(2)
 
 #Savar
 navegador.find_element('xpath', '//*[@id="edit_user_132947495"]/div/p[2]/button').click()
-sleep(3)
+sleep(1)
 
